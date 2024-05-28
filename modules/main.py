@@ -41,7 +41,7 @@ async def restart_handler(_, m):
 
 
 
-@bot.on_message(filters.command(["text4"]))
+@bot.on_message(filters.command(["downvid"]))
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text('**SEND TXT FILE 🗃️ OR LINKS TO DOWNLOAD 🔗**')
     input: Message = await bot.listen(editable.chat.id)
