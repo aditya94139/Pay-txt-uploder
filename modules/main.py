@@ -31,7 +31,7 @@ bot = Client(
 
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text("****𝙷𝚒! 𝐈❜𝐦 𝐓𝐱𝐭 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫 𝐁𝐨𝐭 ** [{m.from_user.first_name}](tg://user?id={m.from_user.id})\n\n 🟢 **𝙶𝚒𝚟𝚎 𝐇𝐢𝐝𝐝𝐞𝐧 𝙲𝚘𝚖𝚖𝚊𝚗𝚍 𝚝𝚘 𝙳𝚘𝚠𝚗𝚕𝚘𝚊𝚍 𝙵𝚛𝚘𝚖 𝚊 𝚃𝚎𝚡𝚝 𝚏𝚒𝚕𝚎.🎓✨**")
+    editable = await m.reply_text("**ℍɪɪ** [{m.from_user.first_name}](tg://user?id={m.from_user.id})\n\n I Am A Bot For Download Links From Your **.TXT** File And Then Upload That File On Telegram So Basically If You Want To Use Me First Send Me Command And Then Follow Few Steps..")
 
 
 @bot.on_message(filters.command("stop"))
@@ -162,8 +162,8 @@ async def account_login(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'** {str(count).zfill(3)}) {name1} {res}〔«𝙼𝚎𝚗𝚍𝚊𝚡»〕.mkv**\n\n**Bᴀᴛᴄʜ Nᴀᴍᴇ »** `{raw_text0}`\n\n**Dᴏᴡɴʟᴏᴀᴅᴇᴅ Bʏ : {MR}**\n\n'
-                cc1 = f'**{str(count).zfill(3)}) {name1}〔«𝙼𝚎𝚗𝚍𝚊𝚡»〕.pdf** \n\n**Bᴀᴛᴄʜ Nᴀᴍᴇ »** `{raw_text0}`\n\n**Dᴏᴡɴʟᴏᴀᴅᴇᴅ Bʏ : {MR}**\n\n'
+                cc = f'** {str(count).zfill(3)}) {name1} {res}.mkv**\n\n**Bᴀᴛᴄʜ Nᴀᴍᴇ »** `{raw_text0}`\n\n**Dᴏᴡɴʟᴏᴀᴅᴇᴅ Bʏ : {MR}**\n\n'
+                cc1 = f'**{str(count).zfill(3)}) {name1} .pdf** \n\n**Bᴀᴛᴄʜ Nᴀᴍᴇ »** `{raw_text0}`\n\n**Dᴏᴡɴʟᴏᴀᴅᴇᴅ Bʏ : {MR}**\n\n'
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
